@@ -5,8 +5,10 @@ import { expect } from 'chai'
 
 describe( 'bubble sort', () => {
 	it( 'should return sorted array', () => {
-		const unsorted = [ 1,2,9,8,7,5,0 ]
-		const sorted   = [ 0,1,2,5,7,8,9 ]
+		// const unsorted = [ 1,2,9,8,7,5,0 ]
+		const unsorted = [ 1,0,2 ]
+		const sorted   = [ 0,1,2 ]
+		// const sorted   = [ 0,1,2,5,7,8,9 ]
 
 		const result = bubbleSort( unsorted )
 
