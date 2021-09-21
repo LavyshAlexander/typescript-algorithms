@@ -1,4 +1,4 @@
-# TypeScript Project Template
+# TypeScript Algorithms
 
 This repository contains TypeScript based examples of many popular algorithms.
 
