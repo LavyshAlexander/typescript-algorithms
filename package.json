@@ -1,0 +1,27 @@
+{
+	"name": "typescript-algorithms",
+	"version": "0.0.1",
+	"description": "This library with implemented basic algorithms in TypeScript.",
+	"main": "dist/bundle.js",
+	"types": "dist/index.d.ts",
+	"author": "Lavysh Alexander <LavyshAlexander@gmail.com>",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/chai": "^4.2.21",
+		"@types/mocha": "^9.0.0",
+		"@types/node": "^12.6.8",
+		"chai": "^4.3.4",
+		"mocha": "^9.1.1",
+		"rimraf": "^3.0.2",
+		"ts-loader": "^6.0.4",
+		"ts-node": "^10.2.1",
+		"typescript": "^3.5.3",
+		"webpack": "^4.39.1",
+		"webpack-cli": "^3.3.6"
+	},
+	"scripts": {
+		"test": "mocha -r ts-node/register  test/**/*.test.ts",
+		"clean": "rimraf -rf dist",
+		"build": "yarn clean && yarn test && ./node_modules/.bin/webpack"
+	}
+}
