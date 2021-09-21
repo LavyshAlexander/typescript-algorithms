@@ -1,5 +1,5 @@
 /src/
-/tests/
+/test/
 /built/tests/
 /tsconfig.json
 /jest.config.js
