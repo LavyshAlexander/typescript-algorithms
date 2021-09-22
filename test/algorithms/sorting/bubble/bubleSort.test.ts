@@ -1,32 +1,12 @@
-import { bubbleSort } from '../../../../src/algorithms/sorting'
 import 'mocha'
-import { expect } from 'chai'
+import { bubbleSort } from '../../../../src/algorithms/sorting'
+import { testUnsortedArray, testEmptyArray, testEmptyArrayRef } from '../common'
 
 
 describe( 'bubble sort', () => {
-	it( 'should return sorted array', () => {
-		const unsorted = [ 1,2,9,8,7,5,0 ]
-		const sorted   = [ 0,1,2,5,7,8,9 ]
+	it( 'should return sorted array', testUnsortedArray( bubbleSort ) )
 
-		const result = bubbleSort( unsorted )
+	it( 'should return empty array if in input was empty array', testEmptyArray( bubbleSort ) )
 
-		expect( result ).to.deep.equal( sorted )
-	} )
-
-	it( 'should return empty array if in input was empty array', () => {
-		const emptyArray: number[] = []
-
-		const result = bubbleSort( emptyArray )
-
-		expect( result ).to.be.empty
-	} )
-
-	it( 'should return empty array if in input was empty array but by different ref', () => {
-		const emptyArray: number[] = []
-
-		const result = bubbleSort( emptyArray )
-
-		expect( result ).to.be.empty
-		expect( result ).to.not.equal( emptyArray )
-	} )
+	it( 'should return empty array if in input was empty array but by different ref', testEmptyArrayRef( bubbleSort ) )
 })
