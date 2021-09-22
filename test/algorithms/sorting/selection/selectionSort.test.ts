@@ -3,7 +3,7 @@ import { selectionSort } from '../../../../src/algorithms/sorting'
 import { testUnsortedArray, testEmptyArray, testEmptyArrayRef } from '../common'
 
 
-describe( 'bubble sort', () => {
+describe( 'selection sort', () => {
 	it(
 		'should return sorted array',
 		testUnsortedArray( selectionSort )

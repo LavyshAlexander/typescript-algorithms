@@ -1,8 +1,3 @@
-/**
- * | Name			| Best	| Average	| Worst	| Memory	| Stable	|
- * } Bubble sort	| n		| n2		| n2	| 1			| Yes		|
- */
-
 export function bubbleSort( array: number[] ): number[] {
 	// Clone original array to prevent its modification.
 	const result = [ ...array ]
