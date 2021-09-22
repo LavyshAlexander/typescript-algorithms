@@ -7,7 +7,7 @@
 
 | Name                  | Best             | Average             | Worst               | Memory    | Stable    | Comments  |
 | --------------------- | :--------------: | :-----------------: | :-----------------: | :-------: | :-------: | :-------- |
-| **Selection sort**    | O(n<sup>2</sup>) | O(n<sup>2</sup>)    | O(n<sup>2</sup>)    | O(1)      | No        |           |
+| **Selection sort**    | Θ(n<sup>2</sup>) | Θ(n<sup>2</sup>)    | Θ(n<sup>2</sup>)    | Θ(1)      | No        |           |
 
 ## References
 
