@@ -1,7 +1,13 @@
 export function insertionSort( array: number[] ): number[] {
 	const result = [ ...array ]
 
-	// TODO: Implement.
+	for ( let j = 2; j < result.length; j++ ) {
+		for ( let i = j; i > 0; i-- ) {
+			if ( result[i] < result[i - 1] ) {
+				[ result[i], result[i - 1] ] = [ result[i - 1], result[i] ]
+			}
+		}
+	}
 
 	return result
 }
