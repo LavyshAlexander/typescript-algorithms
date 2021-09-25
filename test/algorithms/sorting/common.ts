@@ -25,6 +25,5 @@ export const testEmptyArrayRef = ( sortAlgorithm: (array: number[]) => number[] 
 
 	const result = sortAlgorithm( emptyArray )
 
-	expect( result ).to.be.empty
-	expect( result ).to.not.equal( emptyArray )
+	expect( result ).to.be.empty.and.not.equal( emptyArray )
 }
