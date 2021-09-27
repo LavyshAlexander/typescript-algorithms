@@ -1,12 +1,36 @@
 import 'mocha'
 import { selectionSort } from '../../../../src/algorithms/sorting'
-import { testUnsortedArray, testEmptyArray, testEmptyArrayRef } from '../common'
+import {
+	testUnsortedArray, testSortedArray, testEqualArray,
+	testNegativeArray, testReversedArray,
+	testEmptyArray, testEmptyArrayRef,
+} from '../common'
 
 
 describe( 'selection sort', () => {
 	it(
 		'should return sorted array',
 		testUnsortedArray( selectionSort )
+	)
+
+	it(
+		'should not change sorted array',
+		testSortedArray( selectionSort )
+	)
+
+	it(
+		'should not change array with equal elements',
+		testEqualArray( selectionSort )
+	)
+
+	it(
+		'should correctly sort array with negative numbers',
+		testNegativeArray( selectionSort )
+	)
+
+	it(
+		'should correctly sort reversed array',
+		testReversedArray( selectionSort )
 	)
 
 	it(
