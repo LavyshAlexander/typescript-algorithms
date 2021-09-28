@@ -1,32 +1,52 @@
 export function heapSort( array: number[] ): number[] {
 	const result: number[] = [ ...array ]
+	const length = result.length
 
-	// Create heap.
-	const nodesCount = Math.floor( result.length / 2 )
-	for ( let i = nodesCount; i > 0; i-- ) {
-		heapify( result, i )
+	createHeap( result, length )
+
+	for( let i = length - 1; i > 0; i-- ) {
+		[ result[0], result[i] ] = [ result[i], result[0] ]
+		createHeap( result, i )
 	}
-
-
 
 	return result
 }
 
+
+function createHeap( array: number[], length: number ) {
+	const nodesCount = Math.floor( length / 2 )
+	let heap: number[]
+
+	if ( length >= array.length ) {
+		heap = array
+	} else {
+		heap = array.slice( 0, length )
+	}
+
+	for ( let i = nodesCount; i >= 0; i-- ) {
+		heapify( heap, i )
+	}
+
+	if ( length < array.length ) {
+		array.splice( 0, length, ...heap )
+	}
+}
+
 function heapify( heap: number[], index: number ): void {
-	const left = 2 * index
-	const right = 2 * index + 1
+	const left = 2 * index + 1
+	const right = 2 * index + 2
 	let largest = index
 
-	if ( left < heap.length && heap[left] > heap[index] ) {
+	if ( left < heap.length && heap[left] > heap[largest] ) {
 		largest = left
 	}
 
-	if ( right < heap.length && heap[right] > heap[index] ) {
+	if ( right < heap.length && heap[right] > heap[largest] ) {
 		largest = right
 	}
 
 	if ( largest !== index ) {
 		[ heap[index], heap[largest] ] = [ heap[largest], heap[index] ]
-		heapify( heap, index )
+		heapify( heap, largest )
 	}
 }
