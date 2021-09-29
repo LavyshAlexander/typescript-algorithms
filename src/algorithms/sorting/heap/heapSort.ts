@@ -33,20 +33,23 @@ function createHeap( array: number[], length: number ) {
 }
 
 function heapify( heap: number[], index: number ): void {
-	const left = 2 * index + 1
-	const right = 2 * index + 2
-	let largest = index
+	let largest: number
 
-	if ( left < heap.length && heap[left] > heap[largest] ) {
-		largest = left
-	}
+	do {
+		const left = 2 * index + 1
+		const right = 2 * index + 2
+		largest = index
 
-	if ( right < heap.length && heap[right] > heap[largest] ) {
-		largest = right
-	}
+		if ( left < heap.length && heap[left] > heap[largest] ) {
+			largest = left
+		}
 
-	if ( largest !== index ) {
-		[ heap[index], heap[largest] ] = [ heap[largest], heap[index] ]
-		heapify( heap, largest )
-	}
+		if ( right < heap.length && heap[right] > heap[largest] ) {
+			largest = right
+		}
+
+		if ( largest !== index ) {
+			[ heap[index], heap[largest] ] = [ heap[largest], heap[index] ]
+		}
+	} while (largest !== index)
 }
