@@ -15,24 +15,13 @@ export function heapSort( array: number[] ): number[] {
 
 function createHeap( array: number[], length: number ) {
 	const nodesCount = Math.floor( length / 2 )
-	let heap: number[]
-
-	if ( length >= array.length ) {
-		heap = array
-	} else {
-		heap = array.slice( 0, length )
-	}
 
 	for ( let i = nodesCount; i >= 0; i-- ) {
-		heapify( heap, i )
-	}
-
-	if ( length < array.length ) {
-		array.splice( 0, length, ...heap )
+		heapify( array, i, length )
 	}
 }
 
-function heapify( heap: number[], index: number ): void {
+function heapify( heap: number[], index: number, length: number ): void {
 	let largest: number
 
 	do {
@@ -40,11 +29,11 @@ function heapify( heap: number[], index: number ): void {
 		const right = 2 * index + 2
 		largest = index
 
-		if ( left < heap.length && heap[left] > heap[largest] ) {
+		if ( left < length && heap[left] > heap[largest] ) {
 			largest = left
 		}
 
-		if ( right < heap.length && heap[right] > heap[largest] ) {
+		if ( right < length && heap[right] > heap[largest] ) {
 			largest = right
 		}
 
