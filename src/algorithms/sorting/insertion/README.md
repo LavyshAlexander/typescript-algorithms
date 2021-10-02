@@ -1,7 +1,15 @@
 # Insertion Sort
 
 ```TypeScript
-// TODO: Add pseudocode or description
+function insertionSort( array: number[] ): number[] {
+    /**
+     * 1. Split array in two parts:
+     * 2. Left part is initially consist of only one zero-indexed element, and that part is always stays sorted.
+     * 3. Right part is equal to other part of array that is not placed in left sorted part.
+     * 4. Take first element of right part and put in corresponding position of left part.
+     * 5. Repeat 4th step until right part has no elements.
+     * /
+}
 ```
 
 ![Algorithm Visualization](https://upload.wikimedia.org/wikipedia/commons/4/42/Insertion_sort.gif)
