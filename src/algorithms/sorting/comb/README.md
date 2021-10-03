@@ -8,10 +8,10 @@
 ```TypeScript
 function combSort( array: number[] ): number[] {
     /**
-     * 1. Define shrink factor `k` (in current implementation you can find it equal 1.24733)
-     * 2. Define `gap` as `n / k`, where `n` is length of array.
+     * 1. Define `shrink` factor (in current implementation you can find it equal 1.24733)
+     * 2. Define `gap` as `n / shrink`, where `n` is length of array.
      * 3. Loop through array and compare `array[i]` and `array[i + gap]` elements, swap them if their order is incorrect.
-     * 4. Set `gap` as `gap / k` and repeat 3rd and 4th step until `gap` is not equal `1`.
+     * 4. Set `gap` as `gap / shrink` and repeat 3rd and 4th step until `gap` is not equal `1`.
      * 5. Sort `array` with `gap` equal `1` until it is not sorted.
      */
 }
@@ -21,9 +21,9 @@ function combSort( array: number[] ): number[] {
 
 ## Complexity
 
-| Name               | Best            | Average             | Worst               | Memory    | Stable    |
-| ------------------ | :-------------: | :-----------------: | :-----------------: | :-------: | :-------: |
-| **Comb sort**    | Θ()            | Θ()    | Θ()    | Θ()      |        |
+| Name           | Best            | Average                                 | Worst               | Memory    | Stable    |
+| -------------- | :-------------: | :-------------------------------------: | :-----------------: | :-------: | :-------: |
+| **Comb sort**  | Θ(n * log(n))   | Θ(n<sup>2</sup> / 2<sup>shrink</sup>)   | Θ(n<sup>2</sup>)    | Θ(1)      | Yes       |
 
 
 ## References
