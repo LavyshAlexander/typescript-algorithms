@@ -17,14 +17,14 @@
 ```TypeScript
 function cocktailSort( array: number[] ): number[] {
     /**
-     * 1. Define `sorted` flag to `false`, `start index` equal to 0 and `end index` to `n-2`.
-     * 2. While `sorted` is false do:
+     * 1. Define `sorted` flag to `false`, `start index` equal to `0` and `end index` to `n`.
+     * 2. While `sorted` is `false` do:
      * 3. Set `sorted` to `true`.
      * 4. Loop through `i` equal `start index` until `i` is less then `end index`.
-     * 5. If `array[i]` > `array[i + 1]` then swap them, set `sorted` to `false`.
+     * 5. If `array[i]` > `array[i + 1]` then swap them and set `sorted` to `false`.
      * 6. Loop through `i` equal `end index` until `i` is bigger then `start index`.
-     * 7. If `array[i - 1]` > `array[i]` then swap them, set `sorted` to `false`.
-     * 8. Increase `start index` and decrease `end index` by 1.
+     * 7. If `array[i - 1]` > `array[i]` then swap them and set `sorted` to `false`.
+     * 8. Increase `start index` and decrease `end index` by `1`.
      */
 }
 ```
