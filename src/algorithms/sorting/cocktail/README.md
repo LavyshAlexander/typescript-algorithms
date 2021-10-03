@@ -43,7 +43,6 @@ function cocktailSort( array: number[] ): number[] {
 | ------------------ | :----: | :---------------: | :-----------------: | :-------: | :-------: |
 | **Cocktail sort**  | Θ(n)   | Θ(n<sup>2</sup>)  | Θ(n<sup>2</sup>)    | Θ(1)      | Yes       |
 
----
 
 ## References
 

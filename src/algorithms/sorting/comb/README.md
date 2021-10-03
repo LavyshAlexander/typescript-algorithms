@@ -1,9 +1,22 @@
 # Comb Sort
 
+<img
+    align="left" width="300px" alt="Comb sort with shrink factor k=1.24733"
+    src="https://upload.wikimedia.org/wikipedia/commons/4/46/Comb_sort_demo.gif"
+/>
+
 
 > Comb sort is a relatively simple sorting algorithm that improves on bubble sort in the same way that
 > Shellsort improves on insertion sort by increasing gap between compared elements.
 
+<br />
+<br />
+<br />
+<br />
+
+---
+
+## Algorithm
 
 ```TypeScript
 function combSort( array: number[] ): number[] {
@@ -16,8 +29,6 @@ function combSort( array: number[] ): number[] {
      */
 }
 ```
-
-![Comb sort with shrink factor k=1.24733](https://upload.wikimedia.org/wikipedia/commons/4/46/Comb_sort_demo.gif)
 
 ## Complexity
 
