@@ -35,7 +35,7 @@ function mergeSort( array: number[] ): number[] {
 
 | Name              | Best        | Average     | Worst       | Memory  | Stable  |
 | ------------------| :---------: | :---------: | :---------: | :-----: | :-----: |
-| **Merge sort**    |  |  |  |     |      |
+| **Merge sort**    | Θ(n*log(n)) | Θ(n*log(n)) | Θ(n*log(n)) | Θ(n)    | Yes     |
 
 ## References
 
