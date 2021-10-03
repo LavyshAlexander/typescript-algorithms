@@ -1,6 +1,9 @@
-# Cocktail Sort
+# Cocktail Shaker Sort
 
-<img align="left" width="300px" alt="Cocktail sort algorithm visualization" src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Sorting_shaker_sort_anim.gif" />
+<img
+    align="left" width="300px" alt="Cocktail sort algorithm visualization"
+    src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Sorting_shaker_sort_anim.gif"
+/>
 
 > Cocktail shaker sort is an extension of bubble sort. The algorithm extends bubble sort by operating in two directions.
 > While it improves on bubble sort by more quickly moving items to the beginning of the list, it provides only marginal
@@ -14,7 +17,14 @@
 ```TypeScript
 function cocktailSort( array: number[] ): number[] {
     /**
-     * TODO: add description.
+     * 1. Define `sorted` flag to `false`, `start index` equal to 0 and `end index` to `n-2`.
+     * 2. While `sorted` is false do:
+     * 3. Set `sorted` to `true`.
+     * 4. Loop through `i` equal `start index` until `i` is less then `end index`.
+     * 5. If `array[i]` > `array[i + 1]` then swap them, set `sorted` to `false`.
+     * 6. Loop through `i` equal `end index` until `i` is bigger then `start index`.
+     * 7. If `array[i - 1]` > `array[i]` then swap them, set `sorted` to `false`.
+     * 8. Increase `start index` and decrease `end index` by 1.
      */
 }
 ```
