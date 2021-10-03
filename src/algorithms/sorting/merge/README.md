@@ -20,13 +20,13 @@
 
 
 ```TypeScript
-function mergeSort( array: number[] ) {
+function mergeSort( array: number[] ): number[] {
     /**
      * 1. If array contains only one element or no elements then return it as is.
-     * 2. Split array in two parts `leftPart` and `rightPart`.
+     * 2. Split array in two parts leftPart and rightPart.
      * 3. mergeSort( leftPart )
      * 4. mergeSort( rightPart )
-     * 5. merge with sorting `leftPart` and `rightPart`.
+     * 5. merge with sorting leftPart and rightPart.
      * /
 }
 ```

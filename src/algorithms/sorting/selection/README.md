@@ -19,12 +19,14 @@
 ## Algorithm
 
 ```TypeScript
-/**
- * 1. Define `minIndex` equal to `0`.
- * 2. Loop through `array` from 'minIndex + 1' and find index of min value.
- * 3. If `minIndex` not equal to founded min value, swap that `array` items.
- * 4. Increment `minIndex` and repeat from 1st step until `minIndex` is less then `array` length.
- * /
+function selectionSort( array: number[] ): number[] {
+    /**
+     * 1. Define `minIndex` equal to `0`.
+     * 2. Loop through `array` from 'minIndex + 1' and find index of min value.
+     * 3. If `minIndex` not equal to founded min value, swap that `array` items.
+     * 4. Increment `minIndex` and repeat from 1st step until `minIndex` is less then `array` length.
+     * /
+}
 ```
 
 ## Complexity
