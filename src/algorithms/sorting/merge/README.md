@@ -1,6 +1,23 @@
 # Merge Sort
 
-![Algorithm Visualization](https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)
+
+<img
+    align="left" width="300px" alt="Merge sort algorithm visualizatoin"
+    src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif"
+/>
+
+> In computer science, merge sort (also commonly spelled as mergesort) is an efficient,
+> general-purpose, and comparison-based sorting algorithm. Most implementations produce a
+> stable sort, which means that the order of equal elements is the same in the input and
+> output. Merge sort is a divide and conquer algorithm that was invented by John von Neumann
+> in 1945.
+
+<br clear="both"/>
+
+---
+
+## Algorithm
+
 
 ```TypeScript
 function mergeSort( array: number[] ) {
@@ -13,12 +30,6 @@ function mergeSort( array: number[] ) {
      * /
 }
 ```
-
-A recursive merge sort algorithm used to sort an array of 7
-integer values. These are the steps a human would take to
-emulate merge sort (top-down).
-
-![Merge Sort](https://upload.wikimedia.org/wikipedia/commons/e/e6/Merge_sort_algorithm_diagram.svg)
 
 ## Complexity
 
