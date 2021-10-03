@@ -17,7 +17,7 @@ function combSort( array: number[] ): number[] {
 }
 ```
 
-![https://upload.wikimedia.org/wikipedia/commons/4/46/Comb_sort_demo.gif](https://upload.wikimedia.org/wikipedia/commons/4/46/Comb_sort_demo.gif)
+![Comb sort with shrink factor k=1.24733](https://upload.wikimedia.org/wikipedia/commons/4/46/Comb_sort_demo.gif)
 
 ## Complexity
 
