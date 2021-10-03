@@ -31,9 +31,9 @@ function cocktailSort( array: number[] ): number[] {
 
 ## Complexity
 
-| Name           | Best            | Average                                 | Worst               | Memory    | Stable    |
-| -------------- | :-------------: | :-------------------------------------: | :-----------------: | :-------: | :-------: |
-| **Cocktail sort**  | Θ()   | Θ()   | Θ()    | Θ()      | Yes       |
+| Name               | Best   | Average           | Worst               | Memory    | Stable    |
+| ------------------ | :----: | :---------------: | :-----------------: | :-------: | :-------: |
+| **Cocktail sort**  | Θ(n)   | Θ(n<sup>2</sup>)  | Θ(n<sup>2</sup>)    | Θ(1)      | Yes       |
 
 ---
 
