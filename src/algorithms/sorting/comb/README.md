@@ -9,7 +9,7 @@
 > Comb sort is a relatively simple sorting algorithm that improves on bubble sort in the same way that
 > Shellsort improves on insertion sort by increasing gap between compared elements.
 
-<div style="clear: both" />
+<br clear="both"/>
 
 ---
 

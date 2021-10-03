@@ -12,9 +12,7 @@
 >
 > This simple algorithm performs poorly in real world use and is used primarily as an educational tool.
 
-<br />
-<br />
-<br />
+<br clear="both"/>
 
 ---
 

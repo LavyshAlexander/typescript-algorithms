@@ -14,9 +14,7 @@
 > Like most variants of bubble sort, cocktail shaker sort is used primarily as an educational tool. More performant
 > algorithms such as timsort, or merge sort are used by the sorting libraries built into popular programming languages.
 
-<br />
-<br />
-<br />
+<br clear="both"/>
 
 ---
 
