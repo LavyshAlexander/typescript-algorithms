@@ -1,9 +1,20 @@
 # Comb Sort
 
+> **Wikipedia:**
+> Comb sort is a relatively simple sorting algorithm originally designed by Włodzimierz Dobosiewicz
+> and Artur Borowy in 1980, later rediscovered (and given the name "Combsort") by Stephen Lacey
+> and Richard Box in 1991. Comb sort improves on bubble sort in the same way that
+> Shellsort improves on insertion sort.
+
+
 ```TypeScript
 function combSort( array: number[] ): number[] {
     /**
-     * TODO: Write description.
+     * 1. Define shrink factor `k` (in current implementation you can find it equal 1.24733)
+     * 2. Define `gap` as `n / k`, where `n` is length of array.
+     * 3. Loop through array and compare `array[i]` and `array[i + gap]` elements, swap them if their order is incorrect.
+     * 4. Set `gap` as `gap / k` and repeat 3rd and 4th step until `gap` is not equal `1`.
+     * 5. Sort `array` with `gap` equal `1` until it is not sorted.
      */
 }
 ```
