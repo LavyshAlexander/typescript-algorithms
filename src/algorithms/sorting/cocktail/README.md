@@ -1,14 +1,20 @@
 # Cocktail Shaker Sort
 
-<img
-    align="left" width="300px" alt="Cocktail sort algorithm visualization"
-    src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Sorting_shaker_sort_anim.gif"
-/>
+<p>
+    <img
+        align="left" width="300px" alt="Cocktail sort algorithm visualization"
+        src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Sorting_shaker_sort_anim.gif"
+    />
 
 > Cocktail shaker sort is an extension of bubble sort. The algorithm extends bubble sort by operating in two directions.
 > While it improves on bubble sort by more quickly moving items to the beginning of the list, it provides only marginal
 > performance improvements.
 > Also known as bidirectional bubble sort, cocktail sort, shaker sort, ripple sort, shuffle sort, or shuttle sort.
+>
+> Like most variants of bubble sort, cocktail shaker sort is used primarily as an educational tool. More performant
+> algorithms such as timsort, or merge sort are used by the sorting libraries built into popular programming languages
+
+</p>
 
 ---
 
