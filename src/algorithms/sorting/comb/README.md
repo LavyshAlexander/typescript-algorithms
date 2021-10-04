@@ -31,7 +31,7 @@ function combSort( array: number[] ): number[] {
 
 | Name           | Best            | Average                                 | Worst               | Memory    | Stable    |
 | -------------- | :-------------: | :-------------------------------------: | :-----------------: | :-------: | :-------: |
-| **Comb sort**  | Θ(n * log(n))   | Θ(n<sup>2</sup> / 2<sup>shrink</sup>)   | Θ(n<sup>2</sup>)    | Θ(1)      | Yes       |
+| **Comb sort**  | Θ(n * log(n))   | Θ(n<sup>2</sup> / 2<sup>shrink</sup>)   | Θ(n<sup>2</sup>)    | Θ(1)      | No        |
 
 
 ## References
