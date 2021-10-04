@@ -8,6 +8,7 @@ This repository contains TypeScript based examples of many popular algorithms.
   - [Bubble Sort](src/algorithms/sorting/bubble)
   - [Cocktail Sort](src/algorithms/sorting/cocktail)
   - [Comb Sort](src/algorithms/sorting/comb)
+  - [Odd-Even Sort](src/algorithms/sorting/oddEven)
   - [Selection Sort](src/algorithms/sorting/selection)
   - [Insertion Sort](src/algorithms/sorting/insertion)
   - [Heap Sort](src/algorithms/sorting/heap)
