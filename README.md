@@ -13,8 +13,8 @@ This repository contains TypeScript based examples of many popular algorithms.
   - [Insertion Sort](src/algorithms/sorting/insertion)
   - [Heap Sort](src/algorithms/sorting/heap)
   - [Merge Sort](src/algorithms/sorting/merge)
-  - Quicksort
   - Shellsort
+  - Quicksort
   - Counting Sort
   - Radix Sort
 
